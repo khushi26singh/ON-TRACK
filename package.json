@@ -1,0 +1,28 @@
+{
+  "name": "on-track",
+  "version": "1.0.0",
+  "description": "My first Git repository author - khushi singh",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khushi26singh/ON-TRACK.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/khushi26singh/ON-TRACK/issues"
+  },
+  "homepage": "https://github.com/khushi26singh/ON-TRACK#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  },
+  "dependencies": {
+    "ejs": "^4.0.1",
+    "express": "^5.2.1"
+  }
+}

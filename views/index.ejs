@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="main w-full min-h-screen bg-zinc-900">
+        <div class="form">
+            <form action="/add" method="POST" class="flex flex-col gap-4 p-4">
+                <input type="text" name="task" placeholder="New Task" class="p-2 rounded bg-pink-500"/>
+                <textarea name="description" placeholder="Task Description" class="p-2 rounded bg-pink-500"></textarea>
+                <button type="submit" class="bg-blue-500 text-white p-2 rounded">Add Task</button>
+            </form>
+
+        </div>
+        <div class="task flex gap-3 flex-wrap">
+            <% if (files.length > 0) { %>
+                <% files.forEach(function(file) { %>
+                    <div class="task-item bg-white p-4 m-4 rounded">
+                        <h2 class="text-xl font-bold"><%= file %></h2>
+                        <p class="text-gray-700">This is a description of the task.</p>
+                    </div>
+                <% }); %>
+            <% } else { %>
+                <p class="text-white">No tasks available.</p>
+            <% } %>
+            
+           
+        </div>
+
+    </div>
+</body>
+</html>
